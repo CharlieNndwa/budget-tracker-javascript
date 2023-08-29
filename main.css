@@ -1,0 +1,112 @@
+body{
+    background: url(abstract.jpg);
+    background-size: cover;
+    justify-content: center;
+}
+
+.budget-tracker {
+    width: 100%;
+    border-collapse: collapse;
+}
+.budget-tracker * {
+    font-family: 'Poppins', sans-serif;
+}
+
+.budget-tracker th {
+    text-align: left;
+    padding: 10px 20px;
+    border-bottom: 2px solid #009578;
+}
+
+.budget-tracker td {
+    padding: 10px 20px;
+}
+
+.input,
+.delete-entry {
+    height: 30px;
+    font-size: 13px;
+    padding: 0 10px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.input {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #bbbbbb;
+}
+
+.delete-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    background: none;
+    color: red;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.delete-entry:hover {
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.controls,
+.summary{
+    text-align: right;
+}
+
+/* For screens smaller than 1200px */
+@media screen and (max-width: 1200px) {
+    .budget-tracker {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .budget-tracker th, .budget-tracker td {
+        padding: 10px;
+    }
+}
+
+/* For screens smaller than 800px */
+@media screen and (max-width: 800px) {
+    .budget-tracker {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .budget-tracker th, .budget-tracker td {
+        padding: 5px;
+    }
+
+    .input,
+    .delete-entry {
+        font-size: 11px;
+        padding: 0 5px;
+    }
+}
+
+/* For screens smaller than 600px */
+@media screen and (max-width: 600px) {
+    .budget-tracker {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .budget-tracker th, .budget-tracker td {
+        padding: 2px 5px;
+    }
+
+    .input,
+    .delete-entry {
+        font-size: 11px;
+        padding: 0 5px;
+    }
+}
